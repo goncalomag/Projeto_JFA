@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JF Almeida | Amostras</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.jfa.pt/wp-content/themes/tema-jfa/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="/HomePage/carrosel/carrosel.css">
+    <link rel="stylesheet" href="/HomePage/buttonDark/styleDark.css">
+    <script scr="https://kit.fontawesome.com/6766657c7.js"></script>
+    <script src="/HomePage/carrosel/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--Link Icons - https://fontawesome.com/icons -->
+    
+    
+</head>
+<body>
+    <input type="checkbox"id="check">
+    <nav>
+        <img src="imagens/logo.png" id="logo" href="/index.html">
+        <div class="search_box">
+            <input type="search" placeholder="Pesquisa">
+            <span class="fa-solid fa-search" id="lupa"></span>
+        </div>
+        
+        <ol>
+            <div class="botaoDark">
+                <div class="trigger" id="trigger">
+                    <div class="indicador"></div>
+                </div>
+                <script src="/HomePage/buttonDark/mainDark.js"></script>
+            </div>
+            <li>
+                <select class="section" id="select">
+                    <option id="option1">PT</option>
+                    <option id="option2">EN</option>
+                    <option id="option">DE</option>
+                </select>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-rug"></i> | Amostras</a></li>
+            <li><a href="https://www.jfa.pt/pt/" target="_blank"><i class="fa-solid fa-globe"></i> | Empresa </a></li>
+            <li><a href="/Página LoginRegistro/index.html"><i class="fa-solid fa-user"></i> | Login</a></li>
+        </ol>
+    </div>
+    <label for="check" class="bar">
+        <span class="fa-solid fa-bars" id="bars"></span>
+        <span class="fa fa-times" id="times"></span>
+    </label>
+</nav>
+
+
+<div class="slideshow-container"><!--CARROSEL DE IMAGENS-->
+    <div class="mySlides fade">
+        <img src="imagens/amostras/teste.jpg" style="width: 100%;" >
+        <div class="text">Texto de Teste</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="imagens/amostras/teste2.jpg" style="width: 100%;">
+        <div class="text">Texto de Teste</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="imagens/amostras/teste3.jpg" style="width: 100%;">
+        <div class="text">Texto de Teste</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="imagens/amostras/teste4.jpg" style="width: 100%;">
+        <div class="text">Caption Text</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+</div>
+<br>
+<div style="text-align: center;"><!--BOLINHAS ABAIXO DO CARROSEL-->
+    <span class="dot" onclick="currentSlides(1)"></span>
+    <span class="dot" onclick="currentSlides(2)"></span>
+    <span class="dot" onclick="currentSlides(3)"></span>
+    <span class="dot" onclick="currentSlides(4)"></span>
+</div>
+<br>
+    <center>
+        <div class="texto">
+            <br>
+            <h1>SOBRE A EMPRESA</h1>
+            <p>Criada em <b>1979</b>, a Têxteis J.F. Almeida, S.A. é uma empresa de referência no setor têxtil para o lar.<br> A cadeia produtiva da empresa inicia-se na preparação das fibras e fiação, passando pelas fases intermédia de tecelagem, tinturaria e acabamentos, a que se seguem a confeção e a expedição.</p>
+        </div>
+    </center>
+</body>
+</html>

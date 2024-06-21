@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.jfa.pt/wp-content/themes/tema-jfa/img/favicon.ico" type="image/x-icon">
+    <title>Login | JF Almeida</title>
+
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up"><!--criar conta-->
+            <form>
+                <a href="/HomePage/index.html"><img src="imagens/logo.png"></a>
+                <h1>Criar conta</h1>
+                <span>Insira abaixo os dados</span>
+                <input type="text" placeholder="Nome" required>
+                <input type="password" placeholder="Password" id="password1" required>
+                <input type="cotacto" placeholder="Contacto">
+                <input type="email" placeholder="Email">
+                <button type="button" onclick="verPassword1()">Mostrar Password</button>
+                <button>Criar conta</button>
+            </form>
+        </div>
+        <div class="form-container sign-in"> <!--log in-->
+            <form>
+                <div class="circle">
+                    <a href="/HomePage/index.html"><img src="imagens/logo.png"></a>
+                </div>
+                <h1>Login</h1> 
+                <span>Insira abaixo os dados de acesso</span>
+                <input type="text" placeholder="Nome" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <a href="#">Esqueceu a password?</a>
+                <button type="button" onclick="verPassword()">Mostrar Password</button>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem-vindo!</h1>
+                    <p>Já tem conta? | Clique abaixo para fazer login</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bem-vindo de volta!</h1>
+                    <p>Não tem conta? | Clique abaixo para criar uma</p>
+                    <button class="hidden" id="register">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    Copyright © 2024 J.F. Almeida, S.A.<br>
+    <a href="https://www.jfa.pt/pt/politica-de-privacidade-e-tratamento-de-dados-pessoais/" target="_blank">Política de Privacidade e Tratamento de Dados Pessoais</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

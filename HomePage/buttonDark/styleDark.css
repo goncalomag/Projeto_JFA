@@ -1,0 +1,45 @@
+
+.trigger{
+    width: 50px;
+    height: 22px;
+    background-color: whitesmoke;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer ;
+}
+
+.trigger .indicador
+{
+    width: 25px;
+    height: 22px;
+    background-color: #111827;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left:0;
+    transition: .5s;
+}
+
+.trigger.dark
+{
+    background-color: #111827;
+}
+
+.trigger.dark .indicador
+{
+    left: 23px;
+    background-color: rgb(255, 255, 255);
+    border: #000;
+}
+body.dark
+{
+    background-color: #111827;
+    color:whitesmoke; 
+}
+
+nav ol.dark
+{
+    background-color: #111827;
+}
+
+
