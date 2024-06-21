@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 *{/*----------------------------------------Settings default da pagina-------------------------------*/
-    margin:0px 0px 4px 0px;
+    margin:0px 0px 5px 0px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
@@ -9,10 +9,9 @@
 
 body{/*-----------------------------------------Body----------------------------------------------------*/
     background-color: whitesmoke;
-    color: black;
+    color: #3d3c3b;
 }
 .texto{ /*------------------------------------- TEXTO INFORMATIVO SOBRE A JFA --------------------------*/  
-    background-color:transparent;
     border-radius: 6px;
     width: 80%;
     border:solid 2px;
