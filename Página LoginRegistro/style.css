@@ -1,13 +1,14 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-*{
+*{ /*------------------------------------ Configurações Gerais da Página ----------------------------------------- */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body{ /* -------------------------------- Configurações Body da Página -------------------------------------------*/
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     display: flex;
@@ -17,13 +18,13 @@ body{
     height: 100vh;
 }
 
-img{
+img{ /* --------------------------------- Estelizaçãoda da IMG Logotipo da Empresa -------------------------------*/
     width: 100px;
     height: 130px;
 }
 
-.container{
-    background-color: #fff;
+.container{ /* -------------------------- Retânugulo localizado atrás dos outros elementos -----------------------*/
+    background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -33,26 +34,26 @@ img{
     min-height: 560px;
 }
 
-.container p{
+.container p{ /* ------------------------ Texto emcima do botão de Criar Conta e Login --------------------------*/
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-.container span{
+.container span{ /* --------------------- Texto abaixo do Login e Criar Conta -----------------------------------*/
     font-size: 12px;
 }
 
-.container a{
+.container a{ /* ------------------------ Texto "Esqueceu a Pasword" --------------------------------------------*/
     color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
-.container button{
-    background-color: #8A391E; /*Buttões de login e criar conta*/
+.container button{/* -------------------- Bõtoes de Login, Criar Conta e Mostrar Password -----------------------*/
+    background-color: #8A391E;
     color: #fff; /*Cor texto do bottão */
     font-size: 12px;
     padding: 10px 45px;
@@ -65,12 +66,12 @@ img{
     cursor: pointer;
 }
 
-.container button.hidden{ /*Botao de mudar de página*/
+.container button.hidden{ /* ------------ Botão de mudar de página ----------------------------------------------*/
     background-color: transparent;
     border-color: #ffffff;
 }
 
-.container form{ /*forms do login e registro*/
+.container form{ /* --------------------- Forms do Login e Registro ---------------------------------------------*/
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -80,7 +81,7 @@ img{
     height: 100%;
 }
 
-.container input{
+.container input{  /* ------------------- Caixas de texto(input) da página --------------------------------------*/
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -91,38 +92,38 @@ img{
     outline: none;
 }
 
-.form-container{
+.form-container{ /* --------------------- Formulário de Login e Registo -----------------------------------------*/
     position: absolute;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
 
-.sign-in{
+.sign-in{ /* ---------------------------- Formulário de Login ---------------------------------------------------*/
     left: 0;
     width: 50%;
     z-index: 2;
 }
 
-.container.active .sign-in{
+.container.active .sign-in{ /* ---------- Movimentação do Forms de Login ao clicar no Botão de "Criar Conta" ----*/
     transform: translateX(100%);
 }
 
-.sign-up{
+.sign-up{ /* ---------------------------- Formulário de Registro ------------------------------------------------*/
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.container.active .sign-up{
+.container.active .sign-up{ /* ---------- Movimentação do Forms de Registo ao clicar no Botão de "Login" --------*/
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
     animation: move 0.6s;
 }
 
-@keyframes move{
+@keyframes move{ /* --------------------- Criação da Aminação ---------------------------------------------------*/
     0%, 49.99%{
         opacity: 0;
         z-index: 1;
@@ -133,7 +134,7 @@ img{
     }
 }
 
-.toggle-container{
+.toggle-container{ /* ------------------- Parte de Mudar para o formulário de "Criar Conta" ---------------------*/
     position: absolute;
     top: 0;
     left: 50%;
@@ -145,13 +146,13 @@ img{
     z-index: 1000;
 }
 
-.container.active .toggle-container{
+.container.active .toggle-container{ /* - Parte de Mudar para o formulário de "Login" ---------------------------*/
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
 
-.toggle{
-    background-color: #512da8;
+.toggle{ /* ----------------------------- Parte Móvel que faz a aminação  ---------------------------------------*/
+    background-color: #ff0000;
     height: 100%;
     background: linear-gradient(to right, #8A391E, #8A391E); /*Cor funda da mancha  Login*/
     color: #ffffff; /*cor do texto da mancha*/
@@ -163,11 +164,11 @@ img{
     transition: all 0.6s ease-in-out;
 }
 
-.container.active .toggle{
+.container.active .toggle{ /* ----------- Texto abaixo do "Bem-vindo"  ------------------------------------------*/
     transform: translateX(50%);
 }
 
-.toggle-panel{
+.toggle-panel{ /* ----------------------- Texto abaixo do "Bem-vindo" e "Bem-vindo de Volta"  -------------------*/
     position: absolute;
     width: 50%;
     height: 100%;
@@ -199,15 +200,17 @@ img{
     transform: translateX(200%);
 }
 
-button:hover{
+button:hover{ /* ------------------------ Bõtoes de Login, Criar Conta e Mostrar Password quando passa o rato em cima -*/
     transition: all linear 100ms;
     cursor: pointer;
     background-color: #d36b49;
     transform: scale(1.05);
 }
 
-input:focus {
+input:focus {/* ------------------------ Input's quando estão em focus(quando está selecionado) -----------------*/
     border: 1px solid #8A391E;
 }
 
+@media (max-width:655px){/* ------------ Definições Página quando Width é menor que 655 -------------------------*/
 
+}

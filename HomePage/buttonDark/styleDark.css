@@ -37,9 +37,8 @@ body.dark
     color:whitesmoke; 
 }
 
-nav ol.dark
+h1.dark
 {
-    background-color: #111827;
+    color: red;
 }
-
 

@@ -16,6 +16,7 @@ body{/*-----------------------------------------Body----------------------------
     width: 80%;
     border:solid 2px;
     border-color:black;
+    color: #d1d5db;
 }
 
 nav{/*----------------------------------------NAV em Si-------------------------------------------------*/
@@ -104,7 +105,7 @@ nav .search_box span:hover{/*-------------------------HOVER DA LUPA-------------
     color: white;
     transition: .2;
 }
-nav .search_box span::after{/*---------------COR DO FUNDO DA AMINACAO QUANDO NAO ESTA EM HOVER-------------------------*/
+nav .search_box span::after{/*---------------COR DO FUNDO DA AMINACAO QUANDO NAO ESTA EM HOVER------------------*/
     height: 100%;
     width: 0%;
     content: '';
@@ -116,7 +117,7 @@ nav .search_box span::after{/*---------------COR DO FUNDO DA AMINACAO QUANDO NAO
     transition: .5s;
 }
 
-nav .search_box span:hover:after{/*-------------------------ANIMACAO DA COR CASTANHA QUANDO HOVER*/
+nav .search_box span:hover:after{/*-----------------ANIMACAO DA COR CASTANHA QUANDO HOVER------------*/
     width: 100%;
     
 }

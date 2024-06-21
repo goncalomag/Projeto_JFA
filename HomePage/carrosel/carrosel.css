@@ -10,7 +10,6 @@
         position: relative;
         margin: auto;
         top:20px;
-        border: 1px solid black; /* tamanho, estilo e cor da borda */
 
     }
     .prev, .next{
