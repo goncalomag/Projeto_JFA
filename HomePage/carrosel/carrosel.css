@@ -1,18 +1,18 @@
 
-    .mySlides{
+    .mySlides{ /*---------------------------- DIV QUE TEM AS IMAGENS -------------------------------*/
         display: none;
     }
     img{
         vertical-align: middle;
     }
-    .slideshow-container{
+    .slideshow-container{/*------------------ CONTAINER QUE CONTÉM TUDO DAS IMAGENS ----------------*/
         max-width: 50%;
         position: relative;
         margin: auto;
         top:20px;
 
     }
-    .prev, .next{
+    .prev, .next{/*-------------------------- BOTÕES LATERAIS PARA PASSAR AS IMAGENS ---------------*/
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -26,24 +26,15 @@
         border-radius: 0 3px 3px 0;
         user-select: none;
     }
-    .next{
+    .next{/*--------------------------------- BOTÃO DA DIREITA PARA PASSAR IMAGEM-------------------*/
         right: 0;
         border-radius: 3px 0 0 3px;
     }
-    .prev:hover, .next:hover{
+    .prev:hover, .next:hover{/*-------------- BOTÕES LATERAIS QUANDO PASSA O RATO EMCIMA -----------*/ 
         background-color: rgb(255, 255, 255);
     }
 
-    .text{
-        color: white;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        bottom: 8px;
-    }
-    .dot{
+    .dot{/*---------------------------------- PONTINHOS ABAIXO DO CARROSEL -------------------------*/
         cursor: pointer;
         height: 15px;;
         width: 15px;
@@ -53,17 +44,17 @@
         display: inline-block;
         transition: background-color 0.6s ease;
     }
-    .active, .dot:hover{
+    .active, .dot:hover{ /*------------------ PONTINHOS QUANDO SE COLOCA O RATO EMCIMA -------------*/
         background-color: #717171;
     }
-    .fade{
+    .fade{/*--------------------------------- CLASE PARA ATRIBUIR A AMINAÇÃO -----------------------*/
         -webkit-animation-name: fade;
         -webkit-animation-duration: .5s;
         animation-name: fade;
         animation-duration: .5s;
     }
 
-    @-webkit-keyframes fade{
+    @-webkit-keyframes fade{/*--------------- ANIMAÇÃO ---------------------------------------------*/
         from {opacity: .4;}
         to{opacity: 1;}
     }
@@ -73,9 +64,7 @@
         to{opacity: 1;}
     }
 
-
-    /* responsivo*/
-    @media only screen and (max-width:300px){
+    @media only screen and (max-width:300px){/*MEDIA -----------------------------------------------*/
         .prev, .next, .text{
             font-size: 11px;
         }
@@ -91,8 +80,7 @@
         }
     }
 
-    /* -------------- TEXTO SOBRE A EMPRESA ----------------------*/
-    h1{
+    h1{/* ----------------------------------- TEXTO SOBRE A EMPRESA --------------------------------*/
         text-align: center;
         text-decoration: overline solid 1px;
         letter-spacing: 3px;

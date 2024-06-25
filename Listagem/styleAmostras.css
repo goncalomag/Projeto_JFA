@@ -1,22 +1,24 @@
-body{
+body{/*-------------------------------------- BODY ------------------------------------------------*/
     margin:0;
 }
 
-h3
+h3/*----------------------------------------- TEXTO PRINCIPAL --------------------------------------*/
 {
     text-align: center;
     font-size: 30px;
     margin: 0;
     padding-top: 10px;
+    color:  #004259;
 }
 
-#logoReg
+#logoReg/*----------------------------------- LOGOTIPO EMPRESA -------------------------------------*/
 {
     width: 64px;
     height: 64px;
+    cursor: pointer;
 }
 
-.gallery
+.gallery/*----------------------------------- DIV QUE CONTÉM TODO ----------------------------------*/
 {   
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +29,7 @@ h3
     margin-top: 10px;
 }
 
-.content
+.content/*----------------------------------- CAIXA DA IMAGENS (ONDE CONTÉM AS IMAGENS) ------------*/
 {
     width: 20%;
     margin:15px;
@@ -37,78 +39,50 @@ h3
     border-radius: 20px;
     cursor:pointer;
     padding-top:10px;
-    box-shadow: 0 14px 28px black,0 10px 10px blue;
+    box-shadow: 0 6px 17px #004259,0 10px 10px #004259;
     transform: .4s;
-    background-color: whitesmoke;
+    background-color: rgb(238, 238, 238);
+    height: 406.5px;
 }
 
-.content:hover
+.content:hover/*----------------------------- EFEITO HOVER DA CAIXA DE IMAGEM ----------------------*/
 {
-    box-shadow: 0 3px 6px black, 0 3px 6px purple;
+    box-shadow: 0 7px 7px darkslateblue, 0 7px 7px darkslateblue;
     transform: translate(0px, -8px);
 }
 
-img
+img/*---------------------------------------- IMAGENS ----------------------------------------------*/
 {
     width: 200px;
     height:200px;
     text-align: center;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
 }
 
-p
+p/*------------------------------------------ TEXTO EXPLICATIVO ------------------------------------*/
 {
     text-align: center;
     color: lightslategray;
     padding-top: 0 8px;
+    transform: translate(0,2px);
 }
 
 h6
 {
     font-size: 28px;
     text-align: center;
-    color: darkblue;
+    color: slategray;
     margin: 0;
+    border: black 3px;
 }
 
-ul
-{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:0 ;
-}
-
-li
-{
-    padding: 5px;
-}
-
-.fa
-{
-    font-size:26px;
-    transition: .4s;
-    margin: 3px;
-}
-
-.checked
-{
-    color: brown;
-}
-
-.fa:hover
-{
-    transform: scale(1.3);
-    transition: .6s;
-}
-
-button
+button/*------------------------------------- BOTÃO "VER MAIS" -------------------------------------*/
 {
     text-align: center;
     font-size: 24px;
-    color:chocolate;
+    color:rgb(255, 255, 255);
     width: 100%;
     padding: 15px;
     border: 0;
@@ -120,29 +94,31 @@ button
 
 .VerMais
 {
-    background-color: blueviolet;
+    background-color: #8A391E;
 }
 
 .VerMais2
 {
-    background-color: chartreuse;
+    background-color: #8A391E;
 }
 
 .VerMais3
 {
-    background-color:turquoise;
+    background-color:#8A391E;
 }
 
 .VerMais4
 {
-    background-color: rgb(3, 31, 83);
+    background-color: #8A391E;
 }
 
-@media(max-width:1000px)
+
+@media(max-width:1000px)/*------------------- MEDIA ------------------------------------------------*/
 {
     .content
     {
-        width:45%;
+        width:450%;
+        
     }
 }
 

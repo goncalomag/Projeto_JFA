@@ -1,5 +1,5 @@
 
-.trigger{
+.trigger{/*---------------------------------- FUNDO DA BOLA ----------------------------------------*/
     width: 50px;
     height: 22px;
     background-color: whitesmoke;
@@ -8,7 +8,7 @@
     cursor: pointer ;
 }
 
-.trigger .indicador
+.trigger .indicador /*----------------------- BOLA -------------------------------------------------*/
 {
     width: 25px;
     height: 22px;
@@ -20,18 +20,18 @@
     transition: .5s;
 }
 
-.trigger.dark
+.trigger.dark/*------------------------------ FUNDO DA BOLA QUANDO A TEMA É DARK -------------------*/
 {
-    background-color: #111827;
+    background-color: #271111;
 }
 
-.trigger.dark .indicador
+.trigger.dark .indicador/*------------------- BOLA QUANDO O TEMA É DARK ----------------------------*/
 {
     left: 23px;
     background-color: rgb(255, 255, 255);
     border: #000;
 }
-body.dark
+body.dark /*--------------------------------- BODY QUANDO O TEMA É DARK ----------------------------*/
 {
     background-color: #111827;
     color:whitesmoke; 
