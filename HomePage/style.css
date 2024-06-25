@@ -47,7 +47,7 @@ nav ol{/*----------------------------------TUDO DENTRO DA NAV-------------------
     margin: auto 0;
 }
 
-nav .botaoDark{/*------------------------------POSICAO   DA--------------------------------------*/
+nav .botaoDark{/*------------------------------POSICAO do dark--------------------------------------*/
     transform: translate(-16px,5px);
 }
 
@@ -172,7 +172,6 @@ nav ol li select option{/*-----------------------------OPTIONS DO SELECT--------
     nav{
         display: block;
         padding: 0;
-
     }
     nav .icon{
         display: inline-block;
@@ -189,7 +188,6 @@ nav ol li select option{/*-----------------------------OPTIONS DO SELECT--------
     }
     nav .search_box input{
         width: 90%;
-
     }
 
     
@@ -197,14 +195,15 @@ nav ol li select option{/*-----------------------------OPTIONS DO SELECT--------
     nav ol{ /* ------------------------------backgroud do menu e aqui--------------------------------*/
         display: flex;
         flex-direction:column;
-        background: rgb(230, 230, 230);
-        height: 10px;
+        background: rgb(255, 255, 255);
+        height: 90px;
         visibility: hidden;
         transition: .3s;
     }
     nav ol li{
         text-align: center;
         opacity: 0;
+        height: 90px;
     }
 
     nav ol .trigger {
