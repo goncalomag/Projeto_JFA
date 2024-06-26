@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-*{ /*------------------------------------ Configurações Gerais da Página ----------------------------------------- */
+*{ /*------------------------------------ Configurações Gerais da Página ---------------------------------------- */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +17,7 @@ body{ /* -------------------------------- Configurações Body da Página ------
     height: 100vh;
 }
 
-img{ /* --------------------------------- Estelizaçãoda da IMG Logotipo da Empresa -------------------------------*/
+img{ /* --------------------------------- Estelização da IMG Logotipo da Empresa ---------------------------------*/
     width: 100px;
     height: 130px;
 }
