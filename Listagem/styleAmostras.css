@@ -37,17 +37,16 @@ h3/*----------------------------------------- TEXTO PRINCIPAL ------------------
     float: left;
     text-align: center;
     border-radius: 20px;
-    cursor:pointer;
     padding-top:10px;
-    box-shadow: 0 6px 17px #004259,0 10px 10px #004259;
+    box-shadow: 0 6px 10px #8A391E,0 6px 10px #8A391E;
     transform: .4s;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(228, 224, 224);
     height: 406.5px;
 }
 
 .content:hover/*----------------------------- EFEITO HOVER DA CAIXA DE IMAGEM ----------------------*/
 {
-    box-shadow: 0 7px 7px darkslateblue, 0 7px 7px darkslateblue;
+    box-shadow: 0 6px 10px #d44718,0 6px 10px #d44718;
     transform: translate(0px, -8px);
 }
 
@@ -58,7 +57,6 @@ img/*---------------------------------------- IMAGENS --------------------------
     text-align: center;
     margin: 0 auto;
     display: block;
-    cursor: pointer;
 }
 
 p/*------------------------------------------ TEXTO EXPLICATIVO ------------------------------------*/
@@ -94,22 +92,7 @@ button/*------------------------------------- BOTÃO "VER MAIS" ----------------
 
 .VerMais
 {
-    background-color: #8A391E;
-}
-
-.VerMais2
-{
-    background-color: #8A391E;
-}
-
-.VerMais3
-{
-    background-color:#8A391E;
-}
-
-.VerMais4
-{
-    background-color: #8A391E;
+    background-color: #004259;
 }
 
 

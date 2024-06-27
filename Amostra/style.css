@@ -182,6 +182,12 @@ body
     color:black;
 }
 
+.fa-regular:hover
+{
+    background-color: yellow;
+    cursor: crosshair;
+}
+
 
 /*-------------------------------------------------------------------------------------------*/
 @media(max-width:595px){
@@ -260,7 +266,7 @@ body
         width: 320px;
     }
     
-    
+   
 }
 
 
