@@ -182,10 +182,12 @@ body
     color:black;
 }
 
-.fa-regular:hover
-{
-    background-color: yellow;
-    cursor: crosshair;
+#star{
+    scale: 1.5;
+    transform: translate(-302px,-150px);
+}
+.teste{
+    color: #ff9f43
 }
 
 
@@ -266,7 +268,9 @@ body
         width: 320px;
     }
     
-   
 }
 
-
+.star
+{
+    color:white;
+}
