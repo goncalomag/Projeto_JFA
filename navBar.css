@@ -114,9 +114,12 @@ nav .bar span{
     color: rgb(255, 255, 255);
     font-size: 35px;
 }
-input[type="checkbox"]{/*-------------------- ESCONDER CHECKBOX PARA MEDIA ------------------------*/
-    -webkit-appearance: none;
+#check{/*-------------------- ESCONDER CHECKBOX PARA MEDIA ------------------------*/
     display: none;
+    -webkit-appearance: none;   
+    
+    
+    
 
 }
 
@@ -180,19 +183,20 @@ nav ol li select option{/*------------------- OPTIONS DO SELECT ----------------
         justify-content: center;
         align-content: center;
         display: inline-flex;
-        flex-direction: column;
-        width: 46px;
+        width: 55px;
+        height: 25px;
+        
     }
 
     nav ol #indicador
     {
-        justify-content: center;
-        align-content: center;
+
         display: flex;
         flex-direction: column;
-        transform: translate(0px,2.5px);
+        transform: translate(-10px,2.5px);
         width: 23px;
         height: 20px;
+        position: relative;
         
     }
     
