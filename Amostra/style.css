@@ -184,7 +184,10 @@ body
 
 #star{
     scale: 1.5;
-    transform: translate(-302px,-150px);
+    float: right;
+    position: relative;
+    top:8px
+
 }
 .teste{
     color: #ff9f43

@@ -117,6 +117,7 @@ nav .bar span{
 input[type="checkbox"]{/*-------------------- ESCONDER CHECKBOX PARA MEDIA ------------------------*/
     -webkit-appearance: none;
     display: none;
+
 }
 
 nav ol li select{/*-------------------------- SELECT ----------------------------------------------*/
@@ -254,9 +255,11 @@ nav ol li select option{/*------------------- OPTIONS DO SELECT ----------------
     }
     nav .bar #times{
         display: none;
+        scale:1.05;
     }
     #check:checked ~ nav .bar #times{
         display: block;
+        scale:1.05;
     }
     #check:checked ~  .slideshow-container{
         display: block;
