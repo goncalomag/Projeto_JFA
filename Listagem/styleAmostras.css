@@ -1,5 +1,7 @@
 body{/*-------------------------------------- BODY ------------------------------------------------*/
     margin:0;
+    height: 100%;
+    overflow:auto; /*hidden - Bloquea | auto - Scroll*/
 }
 
 h3/*----------------------------------------- TEXTO PRINCIPAL --------------------------------------*/
@@ -27,6 +29,8 @@ h3/*----------------------------------------- TEXTO PRINCIPAL ------------------
     align-items: center;
     margin: 50px 0px;
     margin-top: 10px;
+    height: 100%;
+    overflow: none; /*hidden - Bloquea | nome - Scroll*/
 
 }
 
@@ -158,6 +162,12 @@ nav .botaoDark
     transform:translate(-75px,11px)
 }
 
+.fundo
+{
+    background-color: red;
+    width: 750px;
+    z-index: 1;
+}
 
 /*------------------- MEDIA ------------------------------------------------*/
 
@@ -231,7 +241,117 @@ nav .botaoDark
     {
         width: 27%;
     }
+
+
+}
+
+@media (max-width:650px)
+{
+    .filtro
+    {
+        width:100%;
+        border-radius: 0px;
+    }
+
+    #filter
+    {
+        transform: translate(21px,16px);
+    }
+
+    #fechaFiltro
+    {
+        transform: translate(-190px,16px);
+    }
+}
+
+@media (max-width:600px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-172px,16px);
+    }
 }
 
 
+@media (max-width:550px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-158px,16px);
+    }
+}
 
+@media (max-width:500px)
+{
+    #filter
+    {
+        transform: translate(12px,14px);
+    }
+
+
+    #fechaFiltro
+    {
+        transform: translate(-148px,10px);
+    }
+}
+
+@media(max-width:480px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-143px,13px);
+    }
+}   
+
+@media (max-width:455px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-134px,13px);
+    }
+}
+
+@media (max-width:430px)
+{
+    #fechaFiltro{
+    transform: translate(-125px,13px);
+    }
+}
+
+@media (max-width:401px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-117px,13px);
+    }
+}
+
+
+@media (max-width:375px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-107px,13px);
+    }
+}
+
+@media (max-width:354px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-98px,13px);
+    }
+}
+
+@media (max-width:315px)
+{
+    #filter
+    {
+        transform: translate(8px,14px);
+    }
+
+    #fechaFiltro
+    {
+        transform: translate(-91px,13px);
+    }
+}
