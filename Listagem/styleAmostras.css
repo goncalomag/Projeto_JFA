@@ -132,35 +132,12 @@ h6
     width: 0;
   }
 
-
 #botao{
     background-color: orange;
     position: absolute;
     top: 630px;
     left: 70px;
     width: 100px;
-
-}
-
-
-
-
-
-
-
-@media(max-width:1000px)/*------------------- MEDIA ------------------------------------------------*/
-{
-    .content
-    {
-        width:450%;
-        
-    }
-}
-
-@media (max-width:750px){
-    .content{
-        width:100%;
-    }
 }
 
 nav .botaoDark
@@ -172,7 +149,7 @@ nav .botaoDark
 {
     position: fixed;
     scale: 1.5;
-    transform: translate(22px,-600px);
+    transform: translate(24px,21px);
 }
 
 #fechaFiltro
@@ -180,4 +157,81 @@ nav .botaoDark
     scale:1.5;
     transform:translate(-75px,11px)
 }
+
+
+/*------------------- MEDIA ------------------------------------------------*/
+
+@media(max-width:1075px)
+{
+    .content
+    {
+        height: 80%;
+    }
+
+    .VerMais
+    {
+        transform: translate(0px,5px);
+    }
+
+    #filter{
+        transform: translate(16px,17px);
+    }
+
+    #fechaFiltro
+    {
+        transform: translate(-61px,16px);
+    }
+
+    img{
+        height: 150px;
+        width:150px
+    }
+
+    p{
+        width: 95%;
+    }
+}
+
+
+@media(max-width:1000px)
+{
+    .content
+    {
+        width:85%;
+    }
+
+    #filter
+    {
+        transform: translate(10px,17px);
+    }
+}
+
+@media (max-width:880px)
+{
+    #fechaFiltro
+    {
+        transform: translate(-47px,16px);
+    }
+}
+
+@media (max-width:750px){
+    .content{
+        width:85%;
+    }
+}
+
+@media (max-width:700px)
+{
+    .content
+    {
+        width: 75%;
+    }
+
+    .filtro
+    {
+        width: 27%;
+    }
+}
+
+
 
