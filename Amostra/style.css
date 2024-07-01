@@ -216,6 +216,14 @@ body
 
 
 /*-------------------------------------------------------------------------------------------*/
+
+@media (max-width:1075px){
+    #logo
+    {
+        transform: translate(0px,4px);
+    }
+}
+
 @media(max-width:595px){
     
     .main-wrap .product{

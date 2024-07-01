@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="/HomePage/carrosel/carrosel.css">
     <link rel="stylesheet" href="/HomePage/buttonDark/styleDark.css">
     <link rel="stylesheet" href="/Listagem/styleAmostras.css">
+    <link rel="stylesheet" href="./voltaTopo.css">
     <script scr="https://kit.fontawesome.com/6766657c7.js"></script>
     <script src="/HomePage/carrosel/script.js"></script>
     <script src="/Amostra/script.js"> </script>
+    <script src="script.js"></script>
+    <script src="./voltaTop.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--Link Icons - https://fontawesome.com/icons -->
     
 </head>
@@ -21,7 +24,7 @@
     <nav>
         <a href="/index.html" id="logo"><img src="/HomePage/imagens/logo.png" id="logo"></a>
         <div class="search_box">
-            <input type="search" placeholder="Pesquisa">
+            <input type="search" placeholder="Pesquisa" id="search">
             <span class="fa-solid fa-search" id="lupa"></span>
         </div>
         
@@ -61,8 +64,8 @@
         <h6>Texto de teste</h6>
         <button class="VerMais" onclick="muda()"> Ver Mais</button>
     </div>
-
-
+    
+    
     <div class="content">
         <img src="/Listagem/imagens/rosa.png">
         <h3>Teste</h3>
@@ -70,8 +73,8 @@
         <h6>Texto de teste</h6>
         <button class="VerMais" onclick="muda()">Ver Mais</button>
     </div>
-
-
+    
+    
     <div class="content">
         <img src="/Listagem/imagens/cinza.png">
         <h3>Teste</h3>
@@ -79,7 +82,7 @@
         <h6>Texto de teste</h6>
         <button class="VerMais" onclick="muda()"> Ver Mais</button>
     </div>
-
+    
     <div class="content">
         <img src="/Listagem/imagens/rosa.png">
         <h3>Teste</h3>
@@ -87,7 +90,7 @@
         <h6>Texto de teste</h6>
         <button class="VerMais" onclick="muda()"> Ver Mais</button>
     </div>
-
+    
     <div class="content">
         <img src="/Listagem/imagens/cinza.png">
         <h3>Teste</h3>
@@ -95,7 +98,35 @@
         <h6>Texto de teste</h6>
         <button class="VerMais" onclick="muda()"> Ver Mais</button>
     </div>
-
+    
+    <div class="content">
+        <img src="/Listagem/imagens/rosa.png">
+        <h3>Teste</h3>
+        <p>Never gonna give you up</p>
+        <h6>Texto de teste</h6>
+        <button class="VerMais" onclick="muda()"> Ver Mais</button>
+    </div>
+    <div class="content">
+        <img src="/Listagem/imagens/cinza.png">
+        <h3>Teste</h3>
+        <p>Never gonna give you up</p>
+        <h6>Texto de teste</h6>
+        <button class="VerMais" onclick="muda()"> Ver Mais</button>
+    </div>
+    <div class="content">
+        <img src="/Listagem/imagens/rosa.png">
+        <h3>Teste</h3>
+        <p>Never gonna give you up</p>
+        <h6>Texto de teste</h6>
+        <button class="VerMais" onclick="muda()"> Ver Mais</button>
+    </div>
+    <div class="content">
+        <img src="/Listagem/imagens/cinza.png">
+        <h3>Teste</h3>
+        <p>Never gonna give you up</p>
+        <h6>Texto de teste</h6>
+        <button class="VerMais" onclick="muda()"> Ver Mais</button>
+    </div>
     <div class="content">
         <img src="/Listagem/imagens/rosa.png">
         <h3>Teste</h3>
@@ -178,24 +209,31 @@
     <div class="filtro hide" id="filtro">
         <i class="fa-solid fa-x" id="fechaFiltro"></i>
         <h3>Filtros</h3>
-        <input type="text">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="password">
-        <input type="text"><br>
-        <select name="" id="">
-            <option value="">Opçãooooooooooo 1</option>
-            <option value="">Opçãooooooooooo 2</option>
-            <option value="">Opçãooooooooooo 3</option>
-        </select><br>
-        <input type="checkbox">
+        <form>
+            <input type="text" class="inputFiltro"><br>
+            <input type="number" class="inputFiltro"><br>
+            <input type="number" class="inputFiltro"><br>
+            <input type="number" class="inputFiltro"><br>
+            <input type="number" class="inputFiltro"><br>
+            <input type="number" class="inputFiltro"><br>
+            <input type="number" class="inputFiltro"><br>
+            <input type="number" class="inputFiltro"><br>
+            <input type="password" class="inputFiltro"><br>
+            <input type="text" class="inputFiltro"><br>
+            <select name="" id="">
+                <option value="">Opçãooooooooooo 1</option>
+                <option value="">Opçãooooooooooo 2</option>
+                <option value="">Opçãooooooooooo 3</option>
+            </select><br>
+            <input type="checkbox" id="inputFiltro"><br>
+            <input type="submit" value="Aplicar" ><br>   
+            <input type="reset" value="Limpar Filtros">
+        </form>
     </div>
 </div>
-<a href="#" id=""><i class="fa-solid fa-arrow-up" id="voltacima"></i></a>
-<script src="script.js"></script>
+
+<button class="scrollTop" onclick="voltaCima()">
+    <img src="./imagens/seta.png">
+</button>
+
 </body>

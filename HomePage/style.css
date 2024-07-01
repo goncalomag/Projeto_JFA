@@ -27,3 +27,10 @@ p/*------------------------------------------ PARÁGRAFO -----------------------
 {
     transform: translate(0px, -10px);
 }
+
+@media (max-width:1075px){
+    #logo
+    {
+        transform: translate(0px,4px);
+    }
+}

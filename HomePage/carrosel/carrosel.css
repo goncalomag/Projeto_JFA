@@ -30,9 +30,6 @@
         right: 0;
         border-radius: 3px 0 0 3px;
     }
-    .prev:hover, .next:hover{/*-------------- BOTÕES LATERAIS QUANDO PASSA O RATO EMCIMA -----------*/ 
-        background-color: rgb(255, 255, 255);
-    }
 
     .dot{/*---------------------------------- PONTINHOS ABAIXO DO CARROSEL -------------------------*/
         cursor: pointer;
@@ -66,17 +63,34 @@
 
     @media only screen and (max-width:300px){/*MEDIA -----------------------------------------------*/
         .prev, .next, .text{
-            font-size: 11px;
+            font-size: 6px;
         }
         .dot{
             height: 10px;
             width: 10px;
+            transform: translate(0px,10px);
+        }
+
+        .slideshow-container
+        {
+            scale:1.5;
+            transform: translate(0px,22px);
         }
     }
 
     @media only screen and (max-width:500px){
         .prev, .next, .text{
-            font-size: 14px;
+            font-size: 8px;
+        }
+
+        .slideshow-container
+        {
+            scale:1.5;
+            transform:translate(0px,22px);
+        }
+
+        .dot{
+            transform:translate(0px,10px);
         }
     }
 
@@ -88,4 +102,9 @@
     }
     p{
         text-align: center;
+    }
+
+    .texto
+    {
+        transform: translate(0px,20px);
     }

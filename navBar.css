@@ -47,17 +47,17 @@ nav .search_box{/*--------------------------- ASPETO POR TRAZ SEARCH BAR -------
 
 /*------------------------------------------- FOCUS SEARCH BAR ------------------------------------*/
 
-input:focus
+#search:focus
 {
     border-radius: 20px 0px 0px 20px;
 }
-input:focus ~ #lupa
+#search:focus ~ #lupa
 {
     border-radius: 0px 20px 20px 0px;
     transition: .5s;
 }
 
-input:focus ~ #lupa::after{
+#search:focus ~ #lupa::after{
     border-radius: 0px 15px 15px 0px;
 }
 

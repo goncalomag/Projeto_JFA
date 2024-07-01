@@ -151,10 +151,14 @@ nav .botaoDark
 
 #filter
 {
-    position: fixed;
+    position: absolute;
     scale: 1.5;
     transform: translate(24px,21px);
+    background-color: none;
+    display: auto;
+    color:black;
 }
+
 
 #fechaFiltro
 {
@@ -162,6 +166,34 @@ nav .botaoDark
     transform:translate(-75px,11px)
 }
 
+
+#filter.activeFunil
+{
+    position: absolute;
+    scale: 1.5;
+    display: flex;
+    
+}
+
+#inputFiltro{
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    transition: .5;
+}
+
+#inputFiltro:focus{
+    border: solid 1px black;
+    border-radius: 10px;
+    transition: .3 ease ;
+}
+
+input[type="reset"], input[type=submit]{
+    border-radius: 5px;
+    border:none;
+
+
+}
 /*------------------- MEDIA ------------------------------------------------*/
 
 @media(max-width:1075px)
@@ -314,6 +346,11 @@ nav .botaoDark
     #fechaFiltro{
     transform: translate(-125px,13px);
     }
+
+    .scrollTop
+    {
+        transform:translate(15px,0px);
+    }
 }
 
 @media (max-width:401px)
@@ -338,6 +375,14 @@ nav .botaoDark
     #fechaFiltro
     {
         transform: translate(-98px,13px);
+    }
+}
+
+@media (max-width: 320px)
+{
+    .scrollTop{
+       scale:0.7;
+       transform: translate(33px,0px); 
     }
 }
 
