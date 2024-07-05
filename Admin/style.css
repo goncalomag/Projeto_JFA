@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{/*----------------------------------------- DEFINIÇÕES DEFAULT DA PÁGINA -------------------------*/
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{/*-------------------------------------- BODY -------------------------------------------------*/
+    background-color: whitesmoke;
+    color: #3d3c3b;
+    overflow-x: hidden;
+
+}
+
+.containerSideNav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 470px;
+    gap: 70px;
+    margin-top: -20px;
+    margin-left: 45px ;
+    float: left;
+    /* background-color: red; */
+
+}
+
+.containerTabela{
+position: relative;
+/* background-color: green; */
+width: 1000px;
+height: 90%;
+float: right;
+margin: 10px;
+margin-top: 10px;
+display: flex;
+border-radius: 15px;
+padding: 10px;
+/* overflow-y:scroll; */
+
+box-sizing: content-box;
+border: 2px solid black;
+justify-content: center;
+align-items: center;
+
+}
+
+.containers
+{
+    width: 97%;
+    height: 72vh;
+    border: 3px solid black;
+    box-sizing: content-box;
+    border-radius: 15px;
+    margin: 30px 3px 0px 18px;
+    float: left;
+
+}
+
+button
+{
+    width: 150px;
+    border-radius: 13px;
+    border: 1px solid darkslategray;
+    background-color: rgb(228, 224, 224);
+    height: 40px;
+    box-sizing: content-box;
+    scale:1.4;
+}
+button:focus{
+    background-color: rgb(156, 147, 147);
+}
+
+
+h3
+{
+    justify-items: center;
+    
+}
