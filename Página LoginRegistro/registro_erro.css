@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding:0px
+}
+
+body{
+    background-color: #111827;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img
+{
+    scale: .8;
+}
+
+.CaixaRegisto
+{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 394px;
+    border-radius:  12px;
+    background-color: #004259;  
+}
+
+.texto
+{
+    color:whitesmoke;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+a
+{
+    color:#0ead98;
+    font-size: larger;
+    font-weight: bold;
+}

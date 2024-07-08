@@ -16,30 +16,30 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up"><!--criar conta-->
-            <form>
-                <a href="/index.html"><img src="imagens/logo.png" id="logoReg"></a>
+            <form action="/JFA/Página LoginRegistro/registo.php" method="POST">
+                <a href="/JFA/index.html"><img src="imagens/logo.png" id="logoReg"></a>
                 <h1>Criar conta</h1>
                 <span>Insira abaixo os dados</span>
-                <input id="input" type="text" placeholder="Nome" required>
-                <input id="input" type="password" placeholder="Password" id="password1" required>
-                <input id="input" type="tel" placeholder="Contacto">
-                <input id="input" type="email" placeholder="Email">
+                <input id="input" type="text" placeholder="Nome" name="Nome_Registo" required>
+                <input id="input" type="password" placeholder="Password" id="password1" name="Password_Registo" required>
+                <input id="input" type="tel" placeholder="Contacto" name="Contacto_Registo">
+                <input id="input" type="email" placeholder="Email" name="Email_Registo">
                 <button id="input" type="button" onclick="verPassword1()">Mostrar Password</button>
-                <button>Criar conta</button>
+                <button type="submit">Criar conta</button>
             </form>
         </div>
         <div class="form-container sign-in"> <!--log in-->
-            <form>
+            <form action="/JFA/Página LoginRegistro/login.php" method="POST">
                 <div class="circle">
-                    <a href="/index.html"><img src="imagens/logo.png"></a>
+                    <a href="/JFA/index.html"><img src="imagens/logo.png"></a>
                 </div>
                 <h1>Login</h1> 
                 <span>Insira abaixo os dados de acesso</span>
-                <input id="input" type="text" placeholder="Nome" required>
-                <input id="input" type="password" placeholder="Password" id="password" required>
+                <input id="input" type="email" placeholder="Email" name=Email_Login required>
+                <input id="input" type="password" placeholder="Password" id="password" name="Password_Login" required>
                 <a href="#">Esqueceu a password?</a>
                 <button type="button" onclick="verPassword()">Mostrar Password</button>
-                <button>Login</button>
+                <button type="submit">Login</button>
             </form>
         </div>
         <div class="toggle-container">

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{/*----------------------------------------- DEFINIÇÕES DEFAULT DA PÁGINA -------------------------*/
+    margin:0px 0px 5px 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body
+{
+    background-color: #1d1c1d;
+}
+
+.CaixaRegisto
+{
+    display: flex;
+    width: 70vh;
+    height: 40vh;
+    border-radius:  12px;
+    background-color: #004259;
+    opacity: .9;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.texto
+{
+    color: white;
+}

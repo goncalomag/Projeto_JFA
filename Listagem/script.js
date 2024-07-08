@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function(){
     body.style.overflow="auto";
     galeria.style.overflow="none";
   });
-  
-  
+
 });
+
 
 /*window.addEventListener('scroll',function(){
 let scroll = document.querySelector('.scrollTop');

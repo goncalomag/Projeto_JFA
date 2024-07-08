@@ -1,6 +1,4 @@
-function muda(){
-    window.location.href = '/Amostra/index.html';
-}
+
 
 const image = document.getElementById( 'productImg' );
 const btn = document.getElementsByClassName( 'btn' );

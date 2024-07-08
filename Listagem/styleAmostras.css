@@ -58,7 +58,7 @@ h3/*----------------------------------------- TEXTO PRINCIPAL ------------------
     padding-top:10px;
     box-shadow: 0 6px 10px #8A391E,0 6px 10px #8A391E;
     transform: .4s;
-    background-color: rgb(228, 224, 224);
+    background-color: rgb(228, 224, 224); 
     height: 406.5px;
 }
 
@@ -154,16 +154,14 @@ nav .botaoDark
     position: absolute;
     scale: 1.5;
     transform: translate(24px,21px);
-    background-color: none;
     display: auto;
-    color:black;
 }
 
 
 #fechaFiltro
 {
     scale:1.5;
-    transform:translate(-75px,11px)
+    transform:translate(-75px,11px);
 }
 
 

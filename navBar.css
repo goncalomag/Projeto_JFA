@@ -36,6 +36,7 @@ nav ol li:hover{/*--------------------------- HOVER NA NAV ---------------------
     background: #8A391E;
     color:white;
     cursor: pointer;
+   
 }
 nav .search_box{/*--------------------------- ASPETO POR TRAZ SEARCH BAR --------------------------*/
     display: flex;
@@ -116,11 +117,7 @@ nav .bar span{
 }
 #check{/*-------------------- ESCONDER CHECKBOX PARA MEDIA ------------------------*/
     display: none;
-    -webkit-appearance: none;   
-    
-    
-    
-
+    -webkit-appearance: none;
 }
 
 nav ol li select{/*-------------------------- SELECT ----------------------------------------------*/
