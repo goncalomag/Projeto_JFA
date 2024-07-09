@@ -32,7 +32,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     color: rgb(133, 131, 131);
-    gap: 20px;
+    gap: 2px;
     border-radius: 13px;
     margin-top: 10px;
     border:2px solid rgb(133, 131, 131);
@@ -40,11 +40,11 @@ body{
 
 .TextoCaixa{
     margin-bottom: 20px;
-    margin-top: 15px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 15px;      
     width: 320px;
     height:450px;
@@ -64,11 +64,13 @@ a
 .link{
     display: flex;
     flex-direction: column;
-    justify-self: flex-end;
+    justify-self: space-evenly;
     align-items: center;
     width: 100%;
     height: 10%;
-    gap: 4px;
+    gap: 10px;
+    margin-top: 22px;
+    cursor: pointer;
 }
 
 img
@@ -81,6 +83,44 @@ img
     opacity: 60%;
     scale: .8;
 }
-span{
-color: white;
+
+#formulario
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:5px;
+}
+
+button{
+    color:rgb(133, 131, 131);
+    background-color: #0b2731;
+    border: 2px solid rgb(133, 131, 131);
+    border-radius:7px;
+    padding: 4px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+input{
+    width:200%;
+    background-color:rgb(77, 75, 75) ;
+    border: 0px;
+    transition: .4s;
+    scale: 1.1;
+}
+
+input:focus
+{
+    border-radius: 7px;
+    transition: .3s;
+    border-color: transparent;
+    background-color: rgb(133, 131, 131);
+}
+
+button:hover{
+    background-color: rgb(20, 75, 95);
+    scale: 1.1;
+    transition: .3s;
 }
