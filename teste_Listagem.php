@@ -37,7 +37,7 @@
         $Cod_Cliente = $row['Cod_Cliente'];
 
         // Create a div for each record
-       ?>
+        ?>
         <div class="content">
             <img src="<?php echo $Ficheiro?>">
             <h3><?php echo $Tamanho?></h3>

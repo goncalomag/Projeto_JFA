@@ -61,7 +61,7 @@ align-items: center;
 
 }
 
-button
+.operacao
 {
     width: 150px;
     border-radius: 13px;
@@ -71,7 +71,7 @@ button
     box-sizing: content-box;
     scale:1.4;
 }
-button:focus{
+.operacao:focus{
     background-color: rgb(156, 147, 147);
 }
 
@@ -79,5 +79,16 @@ button:focus{
 h3
 {
     justify-items: center;
-    
+}
+
+.tabela_user
+{
+    /* visibility: hidden; */
+    overflow-y: scroll;
+    height: 80%;
+    width: 95%;
+}
+
+.botaotabela{
+
 }

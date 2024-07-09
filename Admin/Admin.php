@@ -48,13 +48,55 @@
 
 <div class="containers">
     <div class="containerSideNav">
-        <button>A</button>
-        <button>B</button>
-        <button>C</button>
+        <button class="operacao">A</button>
+        <button class="operacao">B</button>
+        <button class="operacao">C</button>
     </div>
 
     <div class="containerTabela">
-        <h3>Por favor selecione uma operação.</h3>
+        <div class="tabela_user">
+        <?php
+            $serverName ="DESKTOP-LABNRLV\SQLEXPRESS";
+            $db = new PDO ("sqlsrv:server=$serverName ; Database=JFA_Amostras","","");
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            $sql="SELECT * FROM Users";
+            $fichas= $db -> QUERY($sql);
+
+        ?>
+
+        <center>
+        <h1>Tabela Users</h1>
+        <table width="100%" border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; border: 1px solid #ddd; font-family: Arial, sans-serif;">
+        <tr style="background-color: #ffa500;">
+            <th style="width: 5%; text-align: center;">ID</th>
+            <th style="width: 20%; text-align: center;">Email</th>
+            <th style="width: 15%; text-align: center;">Password</th>
+            <th style="width: 20%; text-align: center;">Nome</th>
+            <th style="width: 10%; text-align: center;">Privilégio</th>
+            <th style="width: 10%; text-align: center;">Código Cliente</th>
+            <th style="width: 10%; text-align: center;">Contacto</th>
+            <th style="width: 10%; text-align: center;">Ações</th>
+        </tr>
+        <?php while ($fic=$fichas->fetch()){?>
+        <tr>
+            <td style="text-align: center;"><?php echo $fic['Id']?></td>
+            <td style="text-align: center;"><?php echo $fic['Email']?></td>
+            <td style="text-align: center;"><?php echo $fic['Password']?></td>
+            <td style="text-align: center;"><?php echo $fic['Nome']?></td>
+            <td style="text-align: center;"><?php echo $fic['Privilegio']?></td>
+            <td style="text-align: center;"><?php echo $fic['Cod_Cliente']?></td>
+            <td style="text-align: center;"><?php echo $fic['Contacto']?></td>
+            <td style="text-align: center;">
+            <a href="edita_equipa.php?editar=<?php echo $fic['Id']?>">Editar </a>
+            <a href="confirmaelimina_equipa.php?num=<?php echo $fic['Id']?>"> Eliminar</a>	
+            </td>
+        </tr>
+        <?php } ?>
+        </table>
+        <button class="botaotabela"onclick="registro()">Adicionar User</button>
+        </center>
+        </div>
     </div>
 </div>
 
