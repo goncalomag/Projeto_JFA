@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #111827;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.DadosPerfil{
+    display: flex;
+    font-weight: normal;
+    opacity: 60%;
+    max-width: 220px;
+}
+
+.CaixaPerfil{
+    background-color: #004259;
+    flex-direction: column;
+    width: 400px;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(133, 131, 131);
+    gap: 20px;
+    border-radius: 13px;
+    margin-top: 10px;
+    border:2px solid rgb(133, 131, 131);
+}
+
+.TextoCaixa{
+    margin-bottom: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15px;      
+    width: 320px;
+    height:450px;
+    border-radius: 7px;
+    background-color: #0b3646;
+    padding: 10px;
+}
+
+a
+{
+    color:#0ead98;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    gap: 4px;
+}
+
+img
+{
+    margin-top: 10px;
+    width: 40%;
+    height: 40%;
+    padding: 0;
+    border-radius: 100%;
+    opacity: 60%;
+    scale: .8;
+}
