@@ -22,6 +22,13 @@ img{ /* --------------------------------- Estelização da IMG Logotipo da Empre
     height: 130px;
 }
 
+.voltar
+{
+    color: gray;
+    padding: 4px;
+
+}
+
 .container{ /* -------------------------- Retânugulo localizado atrás dos outros elementos -----------------------*/
     background-color: #ffffff;
     border-radius: 30px;

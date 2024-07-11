@@ -32,7 +32,6 @@
                 <select class="section" id="select">
                     <option id="option1">PT</option>
                     <option id="option2">EN</option>
-                    <option id="option">DE</option>
                 </select>
             </li>
             <li><a href="/JFA/Amostra/index.html"><i class="fa-solid fa-rug"></i> | Amostras</a></li>
