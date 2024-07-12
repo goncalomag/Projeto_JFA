@@ -1,20 +1,23 @@
 let slideIndex = 1;
 let intervalId = null;
+let timeoutId = null;
 
 function plusSlides(n) {
   clearInterval(intervalId);
+  clearTimeout(timeoutId);
   showSlides(slideIndex += n);
-  setTimeout(function() {
-    intervalId = setInterval(myFunction, 3000);//define a velocidade da troca as imagens a cada 3 segundo
-  }, 7000); // espera 7 segundos de inatividade
+  timeoutId = setTimeout(function() {
+    intervalId = setInterval(myFunction, 3000);
+  }, 7000);
 }
 
-function currentSlide(n) {
+function currentSlides(n) {
   clearInterval(intervalId);
+  clearTimeout(timeoutId);
   showSlides(slideIndex = n);
-  setTimeout(function() {
-    intervalId = setInterval(myFunction, 3000);//define a velocidade da troca as imagens a cada 3 segundo
-  }, 7000); // espera 7 segundos de inatividade
+  timeoutId = setTimeout(function() {
+    intervalId = setInterval(myFunction, 3000);
+  }, 7000);
 }
 
 function showSlides(n) {
@@ -35,9 +38,12 @@ function showSlides(n) {
 
 function myFunction() {
   showSlides(slideIndex += 1);
+  if (slideIndex > document.getElementsByClassName("mySlides").length) {
+    slideIndex = 1;
+  }
 }
 
 window.onload = function() {
   showSlides(1);
-  intervalId = setInterval(myFunction, 3000); // troca as imagens a cada 3 segundo
+  intervalId = setInterval(myFunction, 3000);
 }

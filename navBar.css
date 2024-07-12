@@ -35,8 +35,7 @@ nav ol li a {/*------------------------------ A DENTRO DA NAV ------------------
 nav ol li:hover{/*--------------------------- HOVER NA NAV ----------------------------------------*/
     background: #8A391E;
     color:white;
-    cursor: pointer;
-   
+    cursor: pointer;  
 }
 nav .search_box{/*--------------------------- ASPETO POR TRAZ SEARCH BAR --------------------------*/
     display: flex;

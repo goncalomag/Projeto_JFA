@@ -31,7 +31,7 @@ body{/*-------------------------------------- BODY -----------------------------
 
 .containerTabela{
 position: relative;
-/* background-color: green; */
+/* background-color: green;  */
 width: 1000px;
 height: 90%;
 float: right;
@@ -83,12 +83,17 @@ h3
 
 .tabela_user
 {
-    /* visibility: hidden; */
     overflow-y: scroll;
     height: 80%;
     width: 95%;
 }
 
-.botaotabela{
-
+.botaotabela
+{
+    justify-self: flex-end;
+    align-self: flex-end;
+    background-color: red;
 }
+
+#botaotabela
+{background-color: red;}

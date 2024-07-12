@@ -2,15 +2,50 @@
     .mySlides{ /*---------------------------- DIV QUE TEM AS IMAGENS -------------------------------*/
         display: none;
     }
+
+body{
+    overflow-y: hidden;
+}
+.CorpoPagina{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin-bottom: 0px;
+    bottom: 600px;
+    overflow-y:hidden;
+}
+    
     img{
         vertical-align: middle;
     }
+
+    .carrosel{
+    display: flex;
+    width: 120%;
+    height:100vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: 70px;
+    margin-left:40px;   
+}
+
+    .pontos{
+    display: flex;
+    align-content: center;
+    justify-content:center ;
+    width: 100%;
+}
+
     .slideshow-container{/*------------------ CONTAINER QUE CONTÉM TUDO DAS IMAGENS ----------------*/
-        max-width: 50%;
+        display: flex;
+        max-width: 95%;
         position: relative;
         margin: auto;
         top:20px;
-
+        scale:1.3;
+        margin-left:100px ;
     }
     .prev, .next{/*-------------------------- BOTÕES LATERAIS PARA PASSAR AS IMAGENS ---------------*/
         cursor: pointer;
@@ -40,6 +75,8 @@
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
+        z-index: 1;
+        position: relative;
     }
     .active, .dot:hover{ /*------------------ PONTINHOS QUANDO SE COLOCA O RATO EMCIMA -------------*/
         background-color: #717171;
@@ -56,12 +93,12 @@
         to{opacity: 1;}
     }
 
-    @keyframes fade{
+    /* @keyframes fade{
         from {opacity: .4;}
         to{opacity: 1;}
     }
 
-    @media only screen and (max-width:300px){/*MEDIA -----------------------------------------------*/
+    @media only screen and (max-width:300px){
         .prev, .next, .text{
             font-size: 6px;
         }
@@ -92,7 +129,7 @@
         .dot{
             transform:translate(0px,10px);
         }
-    }
+    } */
 
     h1{/* ----------------------------------- TEXTO SOBRE A EMPRESA --------------------------------*/
         text-align: center;
@@ -101,10 +138,15 @@
         
     }
     p{
-        text-align: center;
+        padding: 10px;
     }
 
     .texto
     {
+        float: right;
+        width: 70%;
+        height: 55vh;
         transform: translate(0px,20px);
+        margin-top:55px;
+        margin-right:50px ;
     }
