@@ -32,18 +32,11 @@ h3/*----------------------------------------- TEXTO PRINCIPAL ------------------
     height: 100%;
     overflow: none; /*hidden - Bloquea | nome - Scroll*/
 
+    transition: margin-left 0.5s;
 }
 
 .gallery.pequena{/*-------------------------- DIV QUE CONTÉM TODO ----------------------------------*/
-    display: flex;
-    flex-wrap: wrap;
-    float: right;
-    width: 80.5%;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0px;
-    margin-top: 10px;
-    transition: width 0.5s;
+    margin-left: 22%; /* Ajustar conforme a largura do filtro */
 }
 
 .content/*----------------------------------- CAIXA DA IMAGENS (ONDE CONTÉM AS IMAGENS) ------------*/
@@ -121,19 +114,18 @@ h6
     position: fixed;
     height: 100%;
     top: 134px;
-    left: -1px;
+    left: 0;
     width: 23%;
     text-align: center;
     display: block;
     transition: transform 0.5s, opacity 0.5s, width 0.5s;
     overflow: hidden;
-    z-index: 0;
+    z-index: 1;
   }
   
   .filtro.hide {
     transform: translateX(-100%);
     opacity: 0;
-    width: 0;
   }
 
 #botao{
@@ -153,7 +145,7 @@ nav .botaoDark
 {
     position: absolute;
     scale: 1.5;
-    transform: translate(24px,21px);
+    transform: translate(24px,104px);
     display: auto;
 }
 

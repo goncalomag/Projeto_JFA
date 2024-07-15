@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.caixa{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:40%;
+    height:90vh;
+    background-color: #004259;
+    border-radius: 17px;
+}
+
+.background{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:60%;
+    height:70vh;
+    background-color: #0a2d3a;
+    border-radius: 17px;
+    border: 1px solid grey ;
+    opacity: 87%;
+    padding: 20px;
+}
+
+button{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    padding: 30px;
+    border-radius:10px;
+    background-color: transparent;
+}
+
+.botoes
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#sim{
+    color:green;
+    border: 1px solid green;
+}
+
+#nao{
+    color: red;
+    border: 1px solid red;
+}
+
+#sim:hover{
+    color: white;
+    background-color: green;
+    transition: .2s;
+}
+
+#nao:hover{
+    color: white;
+    background-color: red;
+    transition: .2s;
+}
+
+#nao:focus{
+    scale: 0.95;
+    transition: .2s;
+}
+
+#sim:focus{
+    scale: 0.95;
+    transition: .2s;
+}

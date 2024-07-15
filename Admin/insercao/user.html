@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.jfa.pt/wp-content/themes/tema-jfa/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/JFA/Admin/insercao/user.css  ">
+    <title>Inserir Utilizador</title>
+</head>
+<body>
+    <div class="caixa" style="display: flex; flex-direction: column;">
+        <div class="background">
+            <form action="user.php" method="POST" class="background" style="border:none; width:100%">
+                <h1>Inserir User</h1>
+                Email: <input class="valores" name="email" type="text" required></input>
+                Password: <input class="valores" name="password" type="text" required></input>
+                Nome: <input class="valores" type="text" name="nome" required></input>
+                Privilégio: <input class="valores" type="text" name="privilegio" required></input>
+                Código Cliente: <input class="valores" type="text" name="cod_cliente" required></input>
+                Contacto: <input class="valores" type="text" name="contacto"></input>
+                <button type="submit">Adicionar</button>
+                <a href="/JFA/Admin/admin.php">Voltar</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

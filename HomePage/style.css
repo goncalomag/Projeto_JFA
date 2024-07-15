@@ -10,9 +10,12 @@
 body{/*-------------------------------------- BODY -------------------------------------------------*/
     background-color: whitesmoke;
     color: #3d3c3b;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 .texto{ /*----------------------------------- TEXTO INFORMATIVO SOBRE A JFA ------------------------*/  
-    border-radius: 6px;
+    border-radius: 20px;
     width: 80%;
     border:solid 2px;
     border-color:black;
