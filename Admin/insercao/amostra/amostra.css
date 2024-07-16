@@ -17,7 +17,12 @@ h1{
     color:white;
 }
 
-a
+a{
+    color: aqua;
+    opacity: 100%;
+}
+
+a:hover
 {
     color:rgb(39, 125, 128);
 }
@@ -39,7 +44,7 @@ a
     justify-content: space-evenly;
     align-items: center;
     width:60%;
-    height:80vh;
+    height:94vh;
     background-color: #0a2d3a;
     border-radius: 17px;
     border: 1px solid grey ;
@@ -91,4 +96,9 @@ button:focus{
 output
 {
     color: white;
+}
+
+textarea{
+    width: 280px;
+    height: 75px;
 }

@@ -112,7 +112,7 @@ h6
     background-color: rgb(216, 215, 215);
     border-radius: 0px 50px 50px 0px;
     position: fixed;
-    height: 100%;
+    height: 450px;
     top: 134px;
     left: 0;
     width: 23%;
@@ -121,12 +121,14 @@ h6
     transition: transform 0.5s, opacity 0.5s, width 0.5s;
     overflow: hidden;
     z-index: 1;
-  }
-  
-  .filtro.hide {
+    color:#004259;
+}
+
+
+.filtro.hide {
     transform: translateX(-100%);
     opacity: 0;
-  }
+}
 
 #botao{
     background-color: orange;
@@ -181,8 +183,66 @@ nav .botaoDark
 input[type="reset"], input[type=submit]{
     border-radius: 5px;
     border:none;
+}
 
+#aplicar{
+background-color:transparent;
+padding: 4px;
+border: 1px solid grey;
+border-radius: 7px;
+}
 
+#limpar{
+    background-color:transparent;
+    padding: 4px;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+#aplicar:hover
+{
+    background-color: #8A391E;
+    color: white;
+    border-color: #8A391E;
+    transition: .2s;
+}
+
+#limpar:hover
+{
+    background-color: #8A391E;
+    border-color:#8A391E ;
+    color:white;
+    transition: .2s;
+}
+
+#tamanho{
+    background-color: transparent;
+    border-radius: 7px;
+}
+
+#cores{ 
+    background-color: transparent;
+    border-radius: 7px;}
+
+#gramagem{ 
+    background-color: transparent;
+    border-radius: 7px;
+    border:1px solid grey;
+}
+
+#tamanho:hover{
+    
+    transition: .2s;
+    }
+    
+#cores:hover{ 
+
+    transition: .2s;
+    }
+    
+#gramagem:hover{ 
+
+    transition: .2s;
 }
 /*------------------- MEDIA ------------------------------------------------*/
 

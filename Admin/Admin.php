@@ -39,7 +39,7 @@
                     <option id="option2">EN</option>
                 </select>
             </li>
-            <li><a href="/JFA/Amostra/index.html"><i class="fa-solid fa-rug"></i> | Amostras</a></li>
+            <li><a href="/JFA/Listagem/index.html"><i class="fa-solid fa-rug"></i> | Amostras</a></li>
             <li><a href="https://www.jfa.pt/pt/" target="_blank"><i class="fa-solid fa-globe"></i> | Empresa </a></li>
             <li><a href="/JFA/Página LoginRegistro/index.html"><i class="fa-solid fa-user"></i> | Login</a></li>
         </ol>
@@ -62,7 +62,7 @@
             <button class="operacao">Stock</button>
         </div>
 
-        <div class="containerTabela">
+        <div class="containerTabela" id="tabelas">
             <div class="tabela_user" id=tabela_users style="display: none;">
 
                 <?php
@@ -77,7 +77,7 @@
                 <center>
                     <h1>Tabela Users</h1>
                     <br>
-                    <button class="botaotabela" onclick="registro()">Adicionar User</button>
+                    <button class="botaotabela" onclick="registo_user()">Adicionar User</button>
                     <br><br>
                     <table width="100%" border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; border: 1px solid #ddd; font-family: Arial, sans-serif;">
                         <tr style="background-color: #ffa500;">
@@ -101,9 +101,9 @@
                                 <td style="text-align: center;"><?php echo $fic['Contacto'] ?></td>
                                 <td style="text-align: center;">
                                     <a href="/JFA/Admin/edicao/user/editar_user.php?editar=<?php echo $fic['Id'] ?>">Editar </a>
-                                    <a href="/JFA/Admin/eliminacao/user/confirmaEliminaUser.php?num=<?php echo $fic['Id'] ?>"> Eliminar</a>
+                                    <a href="/JFA/Admin/eliminacao/user/confirmaEliminaUser.php?id=<?php echo $fic['Id'] ?>"> Eliminar</a>
                                 </td>
-                                <button class="scrollTop" onclick="voltaCima()">
+                                <button class="scrollTop" id="botaoTop" onclick="voltaCima()">
                                     <img src="/JFA/Listagem/imagens/seta.png">
                                 </button>
                             </tr>
@@ -127,15 +127,17 @@
 
                 <center>
                     <h1>Tabela Amostras</h1>
+                    <br>
+                    <button class="botaotabela" onclick="registo_amostras()">Adicionar Amostra</button>
+                    <br><br>
                     <table width="100%" border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; border: 1px solid #ddd; font-family: Arial, sans-serif;">
-
                         <tr style="background-color: #ffa500;">
                             <th style="width: 5%; text-align: center;">Cor</th>
                             <th style="width: 20%; text-align: center;">Tamanho</th>
                             <th style="width: 15%; text-align: center;">Código Artigo</th>
                             <th style="width: 50%; text-align: center;">Descrição</th>
-                            <th style="width: 10%; text-align: center;">Gramagem</th>
-                            <th style="width: 10%; text-align: center;">Cliente</th>
+                            <th style="width: 13%; text-align: center;">Gramagem</th>
+                            <th style="width: 15%; text-align: center;">Cliente</th>
                             <th style="width: 10%; text-align: center;">Imagem</th>
                             <th style="width: 10%; text-align: center;">JFA</th>
                             <th style="width: 10%; text-align: center;">Visível</th>
@@ -156,15 +158,16 @@
                                 <td style="text-align: center;"><?php echo $fic['Visivel']; ?></td>
                                 <td style="text-align: center;"><?php echo $fic['Cod_Cliente']; ?></td>
                                 <td style="text-align: center;">
-                                    <a href="#">Editar</a>
+                                    <a href="/JFA/Admin/edicao/amostra/editar_amostra.php?cor=<?php echo $fic['Cor']?>&&tamanho=<?php echo $fic['Tamanho']?>&&cod_artigo=<?php echo $fic['Cod_Artigo']?>;">Editar</a>
                                     <a href="#">Eliminar</a>
                                 </td>
+                                <button class="scrollTop" id="botaoTop" onclick="voltaCima_Amostras()">
+                                    <img src="/JFA/Listagem/imagens/seta.png">
+                                </button>
                             </tr>
                         <?php } ?>
 
                     </table>
-                    <br>
-                    <button id="botaotabela" onclick="registro()">Adicionar User</button>
                 </center>
             </div>
 
@@ -172,7 +175,3 @@
             <head>
                 <script src="./script.js"></script>
             </head>
-
-
-            <!-- Não apagar pf -->
-            <!-- "href="/JFA/Admin/edicao/editar_user.php?editar=<?php echo $fic['Id'] ?>" -->

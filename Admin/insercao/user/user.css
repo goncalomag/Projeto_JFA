@@ -5,15 +5,27 @@
 
 body{
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    color: white;
     background-color: #004259;
+    color: white;
 }
 
+h1{
+    color:white;
+}
+
+a{
+    color: aqua;
+    opacity: 100%;
+}
+
+a:hover
+{
+    color:rgb(39, 125, 128);
+}
 
 .caixa{
     display: flex; 
@@ -32,60 +44,56 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width:60%;
-    height:70vh;
+    height:80vh;
     background-color: #0a2d3a;
     border-radius: 17px;
     border: 1px solid grey ;
     opacity: 87%;
-    padding: 20px;
 }
 
-button{
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    padding: 30px;
-    border-radius:10px;
-    background-color: transparent;
+.valores{
+    border-radius:7px;
+    border: none;
+    text-align: center;
 }
 
-.botoes
+.valores:focus
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-#sim{
-    color:green;
-    border: 1px solid green;
-}
-
-#nao{
-    color: red;
-    border: 1px solid red;
-}
-
-#sim:hover{
+    background-color:#8a391ede;
     color: white;
-    background-color: green;
     transition: .2s;
+    opacity: 87%;
 }
-
-#nao:hover{
+.valorId{
     color: white;
-    background-color: red;
-    transition: .2s;
+    scale: 1.3;
+    border-radius:50%;
+    border: none;
+    text-align: center;
+    width: 20px;
+    background: none;
+}
+button{
+    border-radius: 7px;
+    border: none;
+    padding:5px;
 }
 
-#nao:focus{
-    scale: 0.95;
-    transition: .2s;
+button:hover{
+    background-color: #8A391E;
+    transition: .3s;
+    color:white;
+    border: 1px solid white;
+    cursor: pointer;
 }
 
-#sim:focus{
-    scale: 0.95;
-    transition:.2s;
+button:focus{
+    transform: translate(0px,2px);
+    transition: .2s;
+    background-color: #8A391E;
+}
+
+output
+{
+    color: white;
 }
