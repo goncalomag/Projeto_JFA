@@ -220,6 +220,7 @@ button:hover{ /* ------------------------ Bõtoes de Login, Criar Conta e Mostra
     transition: .4s;
 }
 
+
 @media (max-width:655px){/* ------------ Definições Página quando Width é menor que 655 -------------------------*/
     
     #logoReg

@@ -1,13 +1,18 @@
 <?php
-$num = $_GET['id'];
+$cor = $_GET['cor'];
+$tamanho = $_GET['tamanho'];
+$cod_artigo = $_GET['cod_artigo'];
+
 $serverName = "DESKTOP-LABNRLV\SQLEXPRESS";
 $db = new PDO("sqlsrv:server=$serverName;Database=JFA_Amostras", "", "");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 try {
-    $sql = "DELETE FROM Users WHERE Id=?";
+    $sql = "DELETE FROM Amostras WHERE Cor=? AND Tamanho = ? AND Cod_Artigo = ?";
     $stmt = $db->prepare($sql);
-    $stmt->bindParam(1, $num);
+    $stmt->bindParam(1, $cor);
+    $stmt->bindParam(2, $tamanho);
+    $stmt->bindParam(3, $cod_artigo);
     $stmt->execute();
 
     if ($stmt->rowCount() > 0) {
@@ -24,7 +29,7 @@ try {
 ?>
 <head>
 <link rel="shortcut icon" href="https://www.jfa.pt/wp-content/themes/tema-jfa/img/favicon.ico" type="image/x-icon">
-<title>Elimanar User</title>
+<title>Elimanar Amostra</title>
 </head>
 <script>
         alert("<?= $mensagem?>");

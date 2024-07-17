@@ -1,17 +1,17 @@
 <?php
-    $id=$_GET['id'];
-
+    $cor = $_GET['cor'];
+    $tamanho = $_GET['tamanho'];
+    $cod_artigo = $_GET['cod_artigo'];
+    
     $serverName = "DESKTOP-LABNRLV\SQLEXPRESS";
-        $db = new PDO("sqlsrv:server=$serverName ; Database=JFA_Amostras", "", "");
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        
+    $db = new PDO("sqlsrv:server=$serverName ; Database=JFA_Amostras", "", "");
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>
 
 
 <script>
     function sim(){
-        window.location.href = "/JFA/Admin/eliminacao/user/elimina_user.php?id=<?php echo $id ?>";
+        window.location.href = "/JFA/Admin/eliminacao/amostra/elimina_amostra.php?cor=<?php echo $cor?>&tamanho=<?php echo $tamanho?>&cod_artigo=<?php echo $cod_artigo?>";
     }
 
     function nao(){
@@ -19,15 +19,14 @@
     }
 </script>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <link rel="shortcut icon" href="https://www.jfa.pt/wp-content/themes/tema-jfa/img/favicon.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/JFA/Admin/eliminacao/user/style.css">
-    <title>Eliminar User | Confirmação</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/JFA/Admin/eliminacao/amostra/style.css">
+<title>Eliminar Amostra | Confirmação</title>
 </head>
 <body>
     <div class="caixa" style="display: flex; flex-direction: column;">

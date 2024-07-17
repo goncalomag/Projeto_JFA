@@ -54,7 +54,7 @@
         <div class="containerSideNav">
             <button class="operacao" id="botaoA">Users</button>
             <button class="operacao" id="botaoB">Amostras</button>
-            <button class="operacao">Amostras/Clientes</button>
+            <button class="operacao" id="botaoC">Amostras/Clientes</button>
             <button class="operacao">Características</button>
             <button class="operacao">Curiosidades</button>
             <button class="operacao">Imagens</button>
@@ -112,8 +112,8 @@
                     <br><br>
                     
                 </center>
-                
             </div>
+        
 
             <div class="tabela_amostra" id=tabela_amostras style="display: none;">
                 <?php
@@ -158,18 +158,68 @@
                                 <td style="text-align: center;"><?php echo $fic['Visivel']; ?></td>
                                 <td style="text-align: center;"><?php echo $fic['Cod_Cliente']; ?></td>
                                 <td style="text-align: center;">
-                                    <a href="/JFA/Admin/edicao/amostra/editar_amostra.php?cor=<?php echo $fic['Cor']?>&&tamanho=<?php echo $fic['Tamanho']?>&&cod_artigo=<?php echo $fic['Cod_Artigo']?>;">Editar</a>
-                                    <a href="#">Eliminar</a>
+                                <a href="/JFA/Admin/edicao/amostra/editar_amostra.php?cor=<?php echo $fic['Cor']?>&tamanho=<?php echo $fic['Tamanho']?>&cod_artigo=<?php echo $fic['Cod_Artigo']?>">Editar</a>
+                                    <a href="/JFA/Admin/eliminacao/amostra/confirmaEliminaAmostra.php?cor=<?php echo $fic['Cor']?>&tamanho=<?php echo $fic['Tamanho']?>&cod_artigo=<?php echo $fic['Cod_Artigo']?>">Eliminar</a>
                                 </td>
                                 <button class="scrollTop" id="botaoTop" onclick="voltaCima_Amostras()">
                                     <img src="/JFA/Listagem/imagens/seta.png">
                                 </button>
                             </tr>
                         <?php } ?>
-
                     </table>
                 </center>
             </div>
+            
+            <div class="tabela_amostras_clientes" id=tabela_amostras_clientes style="display: none;">
+                <?php
+                    $serverName = "DESKTOP-LABNRLV\SQLEXPRESS";
+                    $db = new PDO("sqlsrv:server=$serverName ; Database=JFA_Amostras", "", "");
+                    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                    $sql = "SELECT ac.*, u.ID as UserID, u.Nome 
+                            FROM Amostras_Clientes ac 
+                            INNER JOIN Users u ON ac.ID = u.ID";
+                    $fichas = $db->query($sql);
+                    ?>
+
+                    <center>
+                        <h1>Tabela Amostras/Clientes</h1>
+                        <br>
+                        <button class="botaotabela" onclick="registo_amostras_clientes()">Adicionar Amostra</button>
+                        <br><br>
+                        <table width="100%" border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; border: 1px solid #ddd; font-family: Arial, sans-serif;">
+                            <tr style="background-color: #ffa500;">
+                                <th style="width: 9%; text-align: center;">ID User</th>
+                                <th style="width: 20%; text-align: center;">Nome User</th>
+                                <th style="width: 20%; text-align: center;">Cor</th>
+                                <th style="width: 20%; text-align: center;">Tamanho</th>
+                                <th style="width: 20%; text-align: center;">Código Artigo</th>
+                                <th style="width: 20%; text-align: center;">Ações</th>
+                            </tr>
+
+                            <?php while ($fic = $fichas->fetch()) { ?>
+                                <tr>
+                                    <td style="text-align: center;"><?php echo $fic['Id']; ?></td>
+                                    <td style="text-align: center;"><?php echo $fic['Nome']; ?></td>
+                                    <td style="text-align: center;"><?php echo $fic['Cor']; ?></td>
+                                    <td style="text-align: center;"><?php echo $fic['Tamanho']; ?></td>
+                                    <td style="text-align: center;"><?php echo $fic['Cod_Artigo']; ?></td>
+                                    <td style="text-align: center;">
+                                        <a href="">Editar</a>
+                                        <a href="">Eliminar</a>
+                                    </td>
+                                    <button class="scrollTop" id="botaoTop" onclick="voltaCima_Amostras_Clientes()">
+                                        <img src="/JFA/Listagem/imagens/seta.png">
+                                    </button>
+                                </tr>
+                            <?php } ?>
+                        </table>
+                    </center>
+            </div>
+
+        </div>
+    </div>
+        
 
 
             <head>
