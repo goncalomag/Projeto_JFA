@@ -51,11 +51,11 @@
     </nav>
 
     <div class="containers">
-        <div class="containerSideNav">
+        <div class="containerSideNav"><!-- Botões controle das tabelas -->
             <button class="operacao" id="botaoA">Users</button>
             <button class="operacao" id="botaoB">Amostras</button>
             <button class="operacao" id="botaoC">Amostras/Clientes</button>
-            <button class="operacao">Características</button>
+            <button class="operacao" id="botaoD">Características</button>
             <button class="operacao">Curiosidades</button>
             <button class="operacao">Imagens</button>
             <button class="operacao">Materiais</button>
@@ -215,6 +215,62 @@
                             <?php } ?>
                         </table>
                     </center>
+            </div>
+
+
+            <div class="tabela_caracteristicas" id=tabela_caracteristicas style="display: none;">
+                <?php
+                $serverName = "DESKTOP-LABNRLV\SQLEXPRESS";
+                $db = new PDO("sqlsrv:server=$serverName ; Database=JFA_Amostras", "", "");
+                $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                $sql = "SELECT * FROM Caracteristicas";
+                $fichas = $db->QUERY($sql);
+                ?>
+
+                <center>
+                    <h1>Tabela Características</h1>
+                    <br>
+                    <button class="botaotabela" onclick="registo_caracteristicas()">Adicionar Característica</button>
+                    <br><br>
+                    <table width="100%" border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; border: 1px solid #ddd; font-family: Arial, sans-serif;">
+                        <tr style="background-color: #ffa500;">
+                            <th style="width: 10%; text-align: center;">Versão</th>
+                            <th style="width: 20%; text-align: center;">Tamanho</th>
+                            <th style="width: 15%; text-align: center;">Cor</th>
+                            <th style="width: 50%; text-align: center;">Código Artigo</th>
+                            <th style="width: 13%; text-align: center;">Comprimento</th>
+                            <th style="width: 15%; text-align: center;">Largura</th>
+                            <th style="width: 20%; text-align: center;">NE</th>
+                            <th style="width: 10%; text-align: center;">Acabamento</th>
+                            <th style="width: 10%; text-align: center;">Tipo Artigo</th>
+                            <th style="width: 10%; text-align: center;">Composição</th>
+                            <th style="width: 10%; text-align: center;">Ações</th>
+                        </tr>
+
+                        <?php while ($fic = $fichas->fetch()) { ?>
+                            <tr>
+                                <td style="text-align: center;"><?php echo $fic['Versao']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Tamanho']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Cor']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Cod_Artigo']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Comprimento']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Largura']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['NE']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Acabamento']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Tipo_Artigo']; ?></td>
+                                <td style="text-align: center;"><?php echo $fic['Composicao']; ?></td>
+                                <td style="text-align: center;">
+                                <a href="#">Editar</a>
+                                    <a href="#">Eliminar</a>
+                                </td>
+                                <button class="scrollTop" id="botaoTop" onclick="voltaCima_Caracteristicas()">
+                                    <img src="/JFA/Listagem/imagens/seta.png">
+                                </button>
+                            </tr>
+                        <?php } ?>
+                    </table>
+                </center>
             </div>
 
         </div>

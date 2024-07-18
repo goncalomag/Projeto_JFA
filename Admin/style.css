@@ -83,7 +83,7 @@ h3
     justify-items: center;
 }
 
-.tabela_user,.tabela_amostra,.tabela_amostras_clientes
+.tabela_user,.tabela_amostra,.tabela_amostras_clientes,.tabela_caracteristicas
 {
 
     overflow-y: scroll;
